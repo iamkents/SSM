@@ -1,0 +1,4 @@
+com\demo\ssm\stuMan\model\userDto.class
+com\demo\ssm\stuMan\service\userService.class
+com\demo\ssm\stuMan\controller\userController.class
+com\demo\ssm\stuMan\mapper\userMapper.class

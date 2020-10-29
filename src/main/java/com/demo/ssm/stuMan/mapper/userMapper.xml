@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.ssm.stuMan.mapper.userMapper">
+    <resultMap id="userDto" type="com.demo.ssm.stuMan.model.userDto">
+        <result column="Sid" property="Sid"/>
+        <result column="Username" property="Username"/>
+        <result column="Password" property="password"/>
+    </resultMap>
+
+    <select id="listUser" resultMap="userDto">
+        select Sid,Username,Password from user
+    </select>
+
+</mapper>
